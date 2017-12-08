@@ -1,0 +1,61 @@
+body {
+    background: #331900;
+    padding: 0;
+    margin: 0;
+  }
+  svg {
+    width: 100%;
+    height: 100vh;
+    
+    circle {
+      fill: #E89071;
+      transform-origin: center;
+      transform: translate(0px, 0px);
+      animation: dot 20s ease infinite;
+    }
+    
+    #circle1 { 
+      animation-delay: random(20) - 20 + s;
+    }
+    #circle2 { 
+      animation-delay: random(20) - 20 + s;
+    }
+    #circle3 { 
+      animation-delay: random(20) - 20 + s;
+    }
+    #circle4 { 
+      animation-delay: random(20) - 20 + s;
+    }
+    #circle5 { 
+      animation-delay: random(20) - 20 + s;
+    }
+    #circle6 { 
+      animation-delay: random(20) - 20 + s;
+    }
+    #circle7 { 
+      animation-delay: random(20) - 20 + s;
+    }
+    #circle8 { 
+      animation-delay: random(20) - 20 + s;
+    }
+    #circle9 { 
+      animation-delay: random(20) - 20 + s;
+    }
+    #circle10 { 
+      animation-delay: random(20) - 20 + s;
+    }
+    
+    @keyframes dot {
+      0%{ transform: translate(0px, 0px) }
+      10%{ transform: translate(random(100) - 200 + px, random(200) - 100 + px) }
+      20%{ transform: translate(random(100) - 200 + px, random(200) - 100 + px) }
+      30%{ transform: translate(random(100) - 200 + px, random(200) - 100 + px) }
+      40%{ transform: translate(random(100) - 200 + px, random(200) - 100 + px) }
+      50%{ transform: translate(random(100) - 200 + px, random(200) - 100 + px) }
+      60%{ transform: translate(random(100) - 200 + px, random(200) - 100 + px) }
+      70%{ transform: translate(random(100) - 200 + px, random(200) - 100 + px) }
+      80%{ transform: translate(random(100) - 200 + px, random(200) - 100 + px) }
+      90%{ transform: translate(random(100) - 200 + px, random(200) - 100 + px) }    
+      100%{ transform: translate(0px, 0px) }
+    }
+  }
