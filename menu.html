@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dots</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link type="text/css" rel="stylesheet" href="menu.css" />
+</head>
+
+<body>
+
+    <!-- Add prototype html here-->
+    <aside id="menu">
+        <div id="toggle">
+        <svg id="burger-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <title>burger-menu</title>
+            <rect width="32" height="32" fill="none"/>
+            <line id="line-2" x1="0" y1="16" x2="32" y2="16" fill="none" stroke="#e7e7e7" stroke-miterlimit="10" stroke-width="2"/>
+            <line id="line-3" x1="0" y1="22" x2="32" y2="22" fill="none" stroke="#e7e7e7" stroke-miterlimit="10" stroke-width="2"/>
+            <line id="line-1" x1="0" y1="10" x2="32" y2="10" fill="none" stroke="#e7e7e7" stroke-miterlimit="10" stroke-width="2"/>
+        </svg>
+        </div>
+        <ul id="menu-items">
+            <li id="user">
+                <span class="icon user-24"></span>
+                <label for "user">Your profile</label>
+            </li>
+            <li id="search">
+                <span class="icon magnifying-glass-24"></span>
+                <label for "search">Address search</label>
+            </li>
+            <li id="layers">
+                <span class="icon layers-24"></span>
+                <label for "layers">Layer list</label>
+            </li>
+            <li id="bookmarks">
+                <span class="icon bookmark-24"></span>
+                <label for "bookmarks">Bookmarks</label>
+            </li>
+            <li id="basemap">
+                <span class="icon basemap-24"></span>
+                <label for "basemap">Basemap</label>
+            </li>
+            <li id="notifications">
+                <span class="icon bell-24"></span>
+                <label for "notifications">Notifications</label>
+            </li>
+        </ul>
+    </aside>    
+
+	<!-- Load Script -->
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="menu.js"></script>
+</body>
+</html>
