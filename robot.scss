@@ -1,0 +1,95 @@
+---
+---
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #fffff9;
+}
+
+.robot-body {
+  position: absolute;
+  left: calc(50% - 54px);
+  top: calc(50vh - 75px);
+  animation: bob 1s ease-in-out infinite;
+}
+
+.robot-head {
+  position: absolute;
+  left: calc(50% - 44px);
+  top: calc(50vh - 170px);
+  animation: head-rotate 1s ease-in-out infinite;
+}
+
+.robot-left-arm {
+  position: absolute;
+  left: calc(50% + 55px);
+  top: calc(50vh - 65px);
+  transform-origin: 16px 16px;
+  animation: arm-swing 1s ease-in-out infinite;
+}
+
+.robot-right-arm {
+  position: absolute;
+  left: calc(50% - 130px);
+  top: calc(50vh - 65px);
+  transform-origin: 60px 16px;
+  animation: arm-swing 1s ease-in-out infinite;
+}
+
+.robot-left-leg {
+  position: absolute;
+  left: calc(50% - 66px);
+  top: calc(50vh + 15px);
+}
+
+.robot-right-leg {
+  position: absolute;
+  left: calc(50% + 34px);
+  top: calc(50vh + 15px);
+}
+
+.floor {
+  width: 100%;
+  height: calc(50vh - 150px);
+  background: #331900;
+  position: absolute;
+  bottom: 0;
+  opacity: .1;
+}
+
+@keyframes bob {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes head-rotate {
+  0% {
+    transform: translate(0, 0) rotate(15deg);
+  }
+  50% {
+    transform: translate(0, -10px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(15deg);
+  }
+}
+
+@keyframes arm-swing {
+  0% {
+    transform: translate(0, 0) rotate(15deg);
+  }
+  50% {
+    transform: translate(0, -10px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(15deg);
+  }
+}
