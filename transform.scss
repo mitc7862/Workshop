@@ -17,7 +17,7 @@ body {
     .transform {
       width: calc(72px - 12px);
       height: calc(72px - 12px);
-      border: solid 6px #331900;
+      border: solid 6px #e89071;
       float: left;
       margin: 30px;
       position: relative;
@@ -27,9 +27,8 @@ body {
         position: absolute;
         width: calc(72px - 12px);
         height: calc(72px - 12px);
-        border: solid 6px #e89071;
+        border: solid 6px #331900;
         margin: -6px 0 0 -6px;
-        opacity: .8;
       }
       
       &#skew {
