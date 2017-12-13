@@ -1,0 +1,64 @@
+---
+---
+
+body {
+  background: #fffff9;
+  margin: 0;
+  padding: 0;
+}
+
+.line {
+    width: 100%;
+    border-top: dotted 6px #e89071;
+    position: absolute;
+    top: calc(50vh - 3px);
+}
+
+#transform-illustrations {
+  position: absolute;
+  top: calc(50% - 36px);
+  width: 100%;
+
+  .element {
+    width: calc(72px - 12px);
+    height: calc(72px - 12px);
+    border: solid 6px #e89071;
+    float: left;
+    position: relative;
+    border-radius: 50%;
+    position: absolute;
+    background: #fffff9;
+    
+    &.two {
+      left: calc(25% - 36px);
+      border-radius: 0;
+    }
+    
+    &.three {
+      left: calc(50% - 36px);
+      border-radius: 0;
+      transform: rotate(135deg);
+    }
+    &.four {
+      left: calc(75% - 36px);
+      border-radius: 0;
+    }
+    &.five {
+      left: calc(100% - 72px);
+      border-radius: 50%;
+    }
+    &.main {
+      border: solid 6px #331900;
+      animation: steps 4s ease-in-out infinite both;
+    }
+  }
+}
+
+
+@keyframes steps {
+  0% { left: 0; border-radius: 50%; transform: rotate(0deg); }
+  25% { left: calc(25% - 36px); border-radius: 0; transform: rotate(0deg); }
+  50% { left: calc(50% - 36px); border-radius: 0; transform: rotate(135deg); }
+  75% { left: calc(75% - 36px); border-radius: 0; transform: rotate(180deg); }
+  100% { left: calc(100% - 72px); border-radius: 50%; transform: rotate(180deg); }
+}
