@@ -1,6 +1,18 @@
-TweenMax.to(".blink", 6, {
-  color: "#fff",
-  textShadow:"0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49daf2, 0 0 35px #49daf2, 0 0 40px #49daf2, 0 0 50px #49daf2, 0 0 75px #49daf2",
-  ease: RoughEase.ease.config({ template:  Elastic.easeOut, strength: 2, points: 100, taper: "none", randomize: true, clamp: false}), y: -500,
-  repeat: -1
-});
+TweenMax.staggerFromTo( 'line', 10, {
+  rotation: 33,
+  ease: Power0.easeNone,
+}, {
+  rotation: 393,
+  ease: Power0.easeNone,
+  repeat: -1,
+}, .02 );
+
+TweenMax.staggerFromTo( 'line', 5, {
+  scaleY: .5,
+}, {
+  scaleY: 1,
+  stroke: '#49DAF2',
+  ease: Power0.easeNone,
+  repeat: -1,
+  yoyo: true,
+}, .02 );

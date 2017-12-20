@@ -4,34 +4,39 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Outline');
 @import url('https://fonts.googleapis.com/css?family=Bungee+Hairline');
 
-body{
-  background: #002337;
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
 
-h1 {
-  font-family: 'Bungee Outline', cursive;
-  font-size: 12rem;
-  font-weight: 400;
-  line-height: 10rem;
+body {
+  margin: 0;
   padding: 0;
-  margin: calc(50vh - 10rem) 0 calc(50vh - 5rem) 0;
-  width: 100%;
-}
-
-.neon {
+  background: #002337;
+  font-family: 'Space Mono', monospace;
   color: #fff;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49daf2, 0 0 35px #49daf2, 0 0 40px #49daf2, 0 0 50px #49daf2, 0 0 75px #49daf2;
-}
-
-.blink {
-  color: rgba(0, 0, 0, .2);
-  text-shadow: none;
-  position: relative;
-  z-index: -1;
-  &.light{
-    font-family: 'Bungee Hairline', cursive;
-    font-size: 10rem;
-    letter-spacing: .5rem;
+  
+  header {
+    text-align: center;
+    
+    span {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: inline-block;
+      padding: 20px;
+      &:nth-of-type(1) {
+        float: left;
+      }
+      &:nth-of-type(2) {
+        
+      }
+      &:nth-of-type(3) {
+        float: right;
+      }
+    }
+  }
+  
+  line {
+    stroke-width: 1;
+    vector-effect: non-scaling-stroke;
+    stroke: #002337;
   }
 }
