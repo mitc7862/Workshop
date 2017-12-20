@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calcite Loaders</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link type="text/css" rel="stylesheet" href="proposal.css" />
+</head>
+
+<body>
+	<!-- Add prototype html here-->
+	<!-- 
+		1. Finite page initializer
+		2. Infinite dialog initializer
+		3. Elastic content spinner
+		4. Dot content spinner
+		5. Orbiting content spinner
+		6. Inline spinner
+	-->
+
+	<header></header>
+	<div id="finite-page-initializer" class="section bg-map span3">
+		<header>
+			<h2>Finite page initializer</h2>
+			<button id="fpi-light" class="background bg-light-button">Light theme</button>
+			<button id="fpi-map" class="background bg-map-button selected">Map</button>
+		</header>
+		<div id="fpi" class="animate"></div>
+		<span id="percentage" class="animate"></span>
+		<button class="refresh">toggle animation</button>
+	</div>
+
+	<div id="infinite-dialog-initializer" class="section bg-map span3">
+		<header>
+			<h2>Infinite dialog initializer</h2>
+			<button id="idi-light" class="background bg-light-button">Light theme</button>
+			<button id="idi-map" class="background bg-map-button selected">Map</button>
+		</header>
+		<div class="dialog">
+			<div id="idi">
+			</div>
+		</div>
+	</div>
+
+	<div id="elastic-content-spinner" class="section bg-map span3">
+		<header>
+			<h2>Elastic content spinner</h2>
+			<button id="ecs-light" class="background bg-light-button">Light theme</button>
+			<button id="ecs-map" class="background bg-map-button selected">Map</button>
+		</header>
+		<div id="ecs">
+			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48">
+				<style type="text/css">
+					
+				</style>
+				<rect id="rect1" y="24" width="16" height="16"/>
+				<rect id="rect2" x="24" y="24" width="16" height="16"/>
+				<rect id="rect3" x="48" y="24" width="16" height="16"/>
+			</svg>
+			  
+		</div>
+	</div>
+
+	<div id="dot-content-spinner" class="section bg-map span3">
+		<header>
+			<h2>Dot content spinner</h2>
+			<button id="dcs-light" class="background bg-light-button">Light theme</button>
+			<button id="dcs-map" class="background bg-map-button selected">Map</button>
+		</header>
+		<div id="dcs">
+			<svg id="spinner-medium" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="64" height="64">
+				<circle class="dot" cx="20" r="6" />
+				<circle class="dot" cx="48" r="6" />
+				<circle class="dot" cx="76" r="6" />
+			</svg>  
+		</div>
+	</div>
+
+	<div id="inline-spinner" class="section bg-map span3">
+		<header>
+			<h2>Inline spinner</h2>
+			<button id="is-light" class="background bg-light-button">Light theme</button>
+			<button id="is-map" class="background bg-map-button selected">Map</button>
+		</header>
+		<div id="is">
+			<label class="loading">Will a restriction tool foul the folded inhabitant…</label>
+			<label class="loading">The handful reassures the spike…</label>
+			<label>The encouraged smoker travels</label>
+			<label class="loading">The paradox wants any prince…</label>
+			<label>The guest brackets the pardon</label>
+			<label>The screw composes</label>
+		</div>
+	</div>
+
+	<!-- Load Script -->
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<script type="text/javascript" src="proposal.js"></script>
+</body>
+</html>
